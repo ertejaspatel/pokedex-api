@@ -116,10 +116,7 @@ https://localhost:5001/pokemon/translated/mewtwo
 ## 🤓 Future Improvements
 - Implemnt Logging with NLog like library to write logs to multiple targets
 - Implement Caching
-- Implement Retry mechanism in case of failure
-- Implement Circuit breaker
-- 
-
-
-
-
+- Implement Retry mechanism (ie.Exponential Backoff) for transient fault
+- Implement Circuit breaker for long lasting transient fault
+- Currently all response are OK 200 even with error, needs to be improved to send proper status code.
+- Implement Tests
